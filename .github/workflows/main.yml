@@ -34,5 +34,5 @@ jobs:
           cd src
           ls -a
       - name: Step 6 - tomcat deploy
-        run: curl -v -u admin:Mahesh -T /home/runner/work/rock-paper-scissor/rock-paper-scissor/target/roshambo-0.0.1-SNAPSHOT.jar 'http://192.168.141.247:2525/deploy?path=/spring_web'
+        run: curl -v -u admin:Mahesh -T /home/runner/work/rock-paper-scissor/rock-paper-scissor/target/roshambo-0.0.1-SNAPSHOT.jar 'http://192.168.141.247:2525//manager/deploy?path=/spring_web'
              
