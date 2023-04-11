@@ -32,7 +32,11 @@ jobs:
       - name: Step 5 - What is in the src folder?
         run: |
           cd src
-          ls -a
+          ls -a 
+        
+      - name: Step 6 - tomcat deploy
+        run: curl -v -u admin:Mahesh -T /home/runner/work/rock-paper-scissor/rock-paper-scissor/target/roshambo-0.0.1-SNAPSHOT.jar 'http://192.168.1.106.com:2525//manager/text/deploy?path=/spring_web'
+
           
      
      
